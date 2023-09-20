@@ -1,0 +1,4 @@
+{
+	"f3c85eba": "compound(uint256,uint256,uint256)",
+	"ae581bc2": "pow(int128,uint256)"
+}

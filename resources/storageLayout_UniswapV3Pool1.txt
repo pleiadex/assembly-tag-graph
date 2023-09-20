@@ -1,0 +1,408 @@
+{
+	"storage": [
+		{
+			"astId": 175,
+			"contract": "contracts/UniswapV3Pool1.sol:UniswapV3Pool1",
+			"label": "slot0",
+			"offset": 0,
+			"slot": "0",
+			"type": "t_struct(Slot0)170_storage"
+		},
+		{
+			"astId": 179,
+			"contract": "contracts/UniswapV3Pool1.sol:UniswapV3Pool1",
+			"label": "feeGrowthGlobal0X128",
+			"offset": 0,
+			"slot": "1",
+			"type": "t_uint256"
+		},
+		{
+			"astId": 183,
+			"contract": "contracts/UniswapV3Pool1.sol:UniswapV3Pool1",
+			"label": "feeGrowthGlobal1X128",
+			"offset": 0,
+			"slot": "2",
+			"type": "t_uint256"
+		},
+		{
+			"astId": 193,
+			"contract": "contracts/UniswapV3Pool1.sol:UniswapV3Pool1",
+			"label": "protocolFees",
+			"offset": 0,
+			"slot": "3",
+			"type": "t_struct(ProtocolFees)188_storage"
+		},
+		{
+			"astId": 197,
+			"contract": "contracts/UniswapV3Pool1.sol:UniswapV3Pool1",
+			"label": "liquidity",
+			"offset": 0,
+			"slot": "4",
+			"type": "t_uint128"
+		},
+		{
+			"astId": 204,
+			"contract": "contracts/UniswapV3Pool1.sol:UniswapV3Pool1",
+			"label": "ticks",
+			"offset": 0,
+			"slot": "5",
+			"type": "t_mapping(t_int24,t_struct(Info)4183_storage)"
+		},
+		{
+			"astId": 210,
+			"contract": "contracts/UniswapV3Pool1.sol:UniswapV3Pool1",
+			"label": "tickBitmap",
+			"offset": 0,
+			"slot": "6",
+			"type": "t_mapping(t_int16,t_uint256)"
+		},
+		{
+			"astId": 217,
+			"contract": "contracts/UniswapV3Pool1.sol:UniswapV3Pool1",
+			"label": "positions",
+			"offset": 0,
+			"slot": "7",
+			"type": "t_mapping(t_bytes32,t_struct(Info)3118_storage)"
+		},
+		{
+			"astId": 224,
+			"contract": "contracts/UniswapV3Pool1.sol:UniswapV3Pool1",
+			"label": "observations",
+			"offset": 0,
+			"slot": "8",
+			"type": "t_array(t_struct(Observation)2331_storage)65535_storage"
+		}
+	],
+	"types": {
+		"t_array(t_struct(Observation)2331_storage)65535_storage": {
+			"base": "t_struct(Observation)2331_storage",
+			"encoding": "inplace",
+			"label": "struct Oracle.Observation[65535]",
+			"numberOfBytes": "2097120"
+		},
+		"t_bool": {
+			"encoding": "inplace",
+			"label": "bool",
+			"numberOfBytes": "1"
+		},
+		"t_bytes32": {
+			"encoding": "inplace",
+			"label": "bytes32",
+			"numberOfBytes": "32"
+		},
+		"t_int128": {
+			"encoding": "inplace",
+			"label": "int128",
+			"numberOfBytes": "16"
+		},
+		"t_int16": {
+			"encoding": "inplace",
+			"label": "int16",
+			"numberOfBytes": "2"
+		},
+		"t_int24": {
+			"encoding": "inplace",
+			"label": "int24",
+			"numberOfBytes": "3"
+		},
+		"t_int56": {
+			"encoding": "inplace",
+			"label": "int56",
+			"numberOfBytes": "7"
+		},
+		"t_mapping(t_bytes32,t_struct(Info)3118_storage)": {
+			"encoding": "mapping",
+			"key": "t_bytes32",
+			"label": "mapping(bytes32 => struct Position.Info)",
+			"numberOfBytes": "32",
+			"value": "t_struct(Info)3118_storage"
+		},
+		"t_mapping(t_int16,t_uint256)": {
+			"encoding": "mapping",
+			"key": "t_int16",
+			"label": "mapping(int16 => uint256)",
+			"numberOfBytes": "32",
+			"value": "t_uint256"
+		},
+		"t_mapping(t_int24,t_struct(Info)4183_storage)": {
+			"encoding": "mapping",
+			"key": "t_int24",
+			"label": "mapping(int24 => struct Tick.Info)",
+			"numberOfBytes": "32",
+			"value": "t_struct(Info)4183_storage"
+		},
+		"t_struct(Info)3118_storage": {
+			"encoding": "inplace",
+			"label": "struct Position.Info",
+			"members": [
+				{
+					"astId": 3109,
+					"contract": "contracts/UniswapV3Pool1.sol:UniswapV3Pool1",
+					"label": "liquidity",
+					"offset": 0,
+					"slot": "0",
+					"type": "t_uint128"
+				},
+				{
+					"astId": 3111,
+					"contract": "contracts/UniswapV3Pool1.sol:UniswapV3Pool1",
+					"label": "feeGrowthInside0LastX128",
+					"offset": 0,
+					"slot": "1",
+					"type": "t_uint256"
+				},
+				{
+					"astId": 3113,
+					"contract": "contracts/UniswapV3Pool1.sol:UniswapV3Pool1",
+					"label": "feeGrowthInside1LastX128",
+					"offset": 0,
+					"slot": "2",
+					"type": "t_uint256"
+				},
+				{
+					"astId": 3115,
+					"contract": "contracts/UniswapV3Pool1.sol:UniswapV3Pool1",
+					"label": "tokensOwed0",
+					"offset": 0,
+					"slot": "3",
+					"type": "t_uint128"
+				},
+				{
+					"astId": 3117,
+					"contract": "contracts/UniswapV3Pool1.sol:UniswapV3Pool1",
+					"label": "tokensOwed1",
+					"offset": 16,
+					"slot": "3",
+					"type": "t_uint128"
+				}
+			],
+			"numberOfBytes": "128"
+		},
+		"t_struct(Info)4183_storage": {
+			"encoding": "inplace",
+			"label": "struct Tick.Info",
+			"members": [
+				{
+					"astId": 4168,
+					"contract": "contracts/UniswapV3Pool1.sol:UniswapV3Pool1",
+					"label": "liquidityGross",
+					"offset": 0,
+					"slot": "0",
+					"type": "t_uint128"
+				},
+				{
+					"astId": 4170,
+					"contract": "contracts/UniswapV3Pool1.sol:UniswapV3Pool1",
+					"label": "liquidityNet",
+					"offset": 16,
+					"slot": "0",
+					"type": "t_int128"
+				},
+				{
+					"astId": 4172,
+					"contract": "contracts/UniswapV3Pool1.sol:UniswapV3Pool1",
+					"label": "feeGrowthOutside0X128",
+					"offset": 0,
+					"slot": "1",
+					"type": "t_uint256"
+				},
+				{
+					"astId": 4174,
+					"contract": "contracts/UniswapV3Pool1.sol:UniswapV3Pool1",
+					"label": "feeGrowthOutside1X128",
+					"offset": 0,
+					"slot": "2",
+					"type": "t_uint256"
+				},
+				{
+					"astId": 4176,
+					"contract": "contracts/UniswapV3Pool1.sol:UniswapV3Pool1",
+					"label": "tickCumulativeOutside",
+					"offset": 0,
+					"slot": "3",
+					"type": "t_int56"
+				},
+				{
+					"astId": 4178,
+					"contract": "contracts/UniswapV3Pool1.sol:UniswapV3Pool1",
+					"label": "secondsPerLiquidityOutsideX128",
+					"offset": 7,
+					"slot": "3",
+					"type": "t_uint160"
+				},
+				{
+					"astId": 4180,
+					"contract": "contracts/UniswapV3Pool1.sol:UniswapV3Pool1",
+					"label": "secondsOutside",
+					"offset": 27,
+					"slot": "3",
+					"type": "t_uint32"
+				},
+				{
+					"astId": 4182,
+					"contract": "contracts/UniswapV3Pool1.sol:UniswapV3Pool1",
+					"label": "initialized",
+					"offset": 31,
+					"slot": "3",
+					"type": "t_bool"
+				}
+			],
+			"numberOfBytes": "128"
+		},
+		"t_struct(Observation)2331_storage": {
+			"encoding": "inplace",
+			"label": "struct Oracle.Observation",
+			"members": [
+				{
+					"astId": 2324,
+					"contract": "contracts/UniswapV3Pool1.sol:UniswapV3Pool1",
+					"label": "blockTimestamp",
+					"offset": 0,
+					"slot": "0",
+					"type": "t_uint32"
+				},
+				{
+					"astId": 2326,
+					"contract": "contracts/UniswapV3Pool1.sol:UniswapV3Pool1",
+					"label": "tickCumulative",
+					"offset": 4,
+					"slot": "0",
+					"type": "t_int56"
+				},
+				{
+					"astId": 2328,
+					"contract": "contracts/UniswapV3Pool1.sol:UniswapV3Pool1",
+					"label": "secondsPerLiquidityCumulativeX128",
+					"offset": 11,
+					"slot": "0",
+					"type": "t_uint160"
+				},
+				{
+					"astId": 2330,
+					"contract": "contracts/UniswapV3Pool1.sol:UniswapV3Pool1",
+					"label": "initialized",
+					"offset": 31,
+					"slot": "0",
+					"type": "t_bool"
+				}
+			],
+			"numberOfBytes": "32"
+		},
+		"t_struct(ProtocolFees)188_storage": {
+			"encoding": "inplace",
+			"label": "struct UniswapV3Pool1.ProtocolFees",
+			"members": [
+				{
+					"astId": 185,
+					"contract": "contracts/UniswapV3Pool1.sol:UniswapV3Pool1",
+					"label": "token0",
+					"offset": 0,
+					"slot": "0",
+					"type": "t_uint128"
+				},
+				{
+					"astId": 187,
+					"contract": "contracts/UniswapV3Pool1.sol:UniswapV3Pool1",
+					"label": "token1",
+					"offset": 16,
+					"slot": "0",
+					"type": "t_uint128"
+				}
+			],
+			"numberOfBytes": "32"
+		},
+		"t_struct(Slot0)170_storage": {
+			"encoding": "inplace",
+			"label": "struct UniswapV3Pool1.Slot0",
+			"members": [
+				{
+					"astId": 157,
+					"contract": "contracts/UniswapV3Pool1.sol:UniswapV3Pool1",
+					"label": "sqrtPriceX96",
+					"offset": 0,
+					"slot": "0",
+					"type": "t_uint160"
+				},
+				{
+					"astId": 159,
+					"contract": "contracts/UniswapV3Pool1.sol:UniswapV3Pool1",
+					"label": "tick",
+					"offset": 20,
+					"slot": "0",
+					"type": "t_int24"
+				},
+				{
+					"astId": 161,
+					"contract": "contracts/UniswapV3Pool1.sol:UniswapV3Pool1",
+					"label": "observationIndex",
+					"offset": 23,
+					"slot": "0",
+					"type": "t_uint16"
+				},
+				{
+					"astId": 163,
+					"contract": "contracts/UniswapV3Pool1.sol:UniswapV3Pool1",
+					"label": "observationCardinality",
+					"offset": 25,
+					"slot": "0",
+					"type": "t_uint16"
+				},
+				{
+					"astId": 165,
+					"contract": "contracts/UniswapV3Pool1.sol:UniswapV3Pool1",
+					"label": "observationCardinalityNext",
+					"offset": 27,
+					"slot": "0",
+					"type": "t_uint16"
+				},
+				{
+					"astId": 167,
+					"contract": "contracts/UniswapV3Pool1.sol:UniswapV3Pool1",
+					"label": "feeProtocol",
+					"offset": 29,
+					"slot": "0",
+					"type": "t_uint8"
+				},
+				{
+					"astId": 169,
+					"contract": "contracts/UniswapV3Pool1.sol:UniswapV3Pool1",
+					"label": "unlocked",
+					"offset": 30,
+					"slot": "0",
+					"type": "t_bool"
+				}
+			],
+			"numberOfBytes": "32"
+		},
+		"t_uint128": {
+			"encoding": "inplace",
+			"label": "uint128",
+			"numberOfBytes": "16"
+		},
+		"t_uint16": {
+			"encoding": "inplace",
+			"label": "uint16",
+			"numberOfBytes": "2"
+		},
+		"t_uint160": {
+			"encoding": "inplace",
+			"label": "uint160",
+			"numberOfBytes": "20"
+		},
+		"t_uint256": {
+			"encoding": "inplace",
+			"label": "uint256",
+			"numberOfBytes": "32"
+		},
+		"t_uint32": {
+			"encoding": "inplace",
+			"label": "uint32",
+			"numberOfBytes": "4"
+		},
+		"t_uint8": {
+			"encoding": "inplace",
+			"label": "uint8",
+			"numberOfBytes": "1"
+		}
+	}
+}

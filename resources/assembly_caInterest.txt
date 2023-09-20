@@ -1,0 +1,1309 @@
+.code
+  PUSH #[$] 0000000000000000000000000000000000000000000000000000000000000000			library CaInterest {\n    func...
+  PUSH [$] 0000000000000000000000000000000000000000000000000000000000000000			library CaInterest {\n    func...
+  PUSH B			library CaInterest {\n    func...
+  DUP3 			library CaInterest {\n    func...
+  DUP3 			library CaInterest {\n    func...
+  DUP3 			library CaInterest {\n    func...
+  CODECOPY 			library CaInterest {\n    func...
+  DUP1 			library CaInterest {\n    func...
+  MLOAD 			library CaInterest {\n    func...
+  PUSH 0			library CaInterest {\n    func...
+  BYTE 			library CaInterest {\n    func...
+  PUSH 73			library CaInterest {\n    func...
+  EQ 			library CaInterest {\n    func...
+  PUSH [tag] 1			library CaInterest {\n    func...
+  JUMPI 			library CaInterest {\n    func...
+  PUSH 4E487B7100000000000000000000000000000000000000000000000000000000			library CaInterest {\n    func...
+  PUSH 0			library CaInterest {\n    func...
+  MSTORE 			library CaInterest {\n    func...
+  PUSH 0			library CaInterest {\n    func...
+  PUSH 4			library CaInterest {\n    func...
+  MSTORE 			library CaInterest {\n    func...
+  PUSH 24			library CaInterest {\n    func...
+  PUSH 0			library CaInterest {\n    func...
+  REVERT 			library CaInterest {\n    func...
+tag 1			library CaInterest {\n    func...
+  JUMPDEST 			library CaInterest {\n    func...
+  ADDRESS 			library CaInterest {\n    func...
+  PUSH 0			library CaInterest {\n    func...
+  MSTORE 			library CaInterest {\n    func...
+  PUSH 73			library CaInterest {\n    func...
+  DUP2 			library CaInterest {\n    func...
+  MSTORE8 			library CaInterest {\n    func...
+  DUP3 			library CaInterest {\n    func...
+  DUP2 			library CaInterest {\n    func...
+  RETURN 			library CaInterest {\n    func...
+.data
+  0:
+    .code
+      PUSHDEPLOYADDRESS 			library CaInterest {\n    func...
+      ADDRESS 			library CaInterest {\n    func...
+      EQ 			library CaInterest {\n    func...
+      PUSH 80			library CaInterest {\n    func...
+      PUSH 40			library CaInterest {\n    func...
+      MSTORE 			library CaInterest {\n    func...
+      PUSH 4			library CaInterest {\n    func...
+      CALLDATASIZE 			library CaInterest {\n    func...
+      LT 			library CaInterest {\n    func...
+      PUSH [tag] 1			library CaInterest {\n    func...
+      JUMPI 			library CaInterest {\n    func...
+      PUSH 0			library CaInterest {\n    func...
+      CALLDATALOAD 			library CaInterest {\n    func...
+      PUSH E0			library CaInterest {\n    func...
+      SHR 			library CaInterest {\n    func...
+      DUP1 			library CaInterest {\n    func...
+      PUSH AE581BC2			library CaInterest {\n    func...
+      EQ 			library CaInterest {\n    func...
+      PUSH [tag] 2			library CaInterest {\n    func...
+      JUMPI 			library CaInterest {\n    func...
+      DUP1 			library CaInterest {\n    func...
+      PUSH F3C85EBA			library CaInterest {\n    func...
+      EQ 			library CaInterest {\n    func...
+      PUSH [tag] 3			library CaInterest {\n    func...
+      JUMPI 			library CaInterest {\n    func...
+    tag 1			library CaInterest {\n    func...
+      JUMPDEST 			library CaInterest {\n    func...
+      PUSH 0			library CaInterest {\n    func...
+      DUP1 			library CaInterest {\n    func...
+      REVERT 			library CaInterest {\n    func...
+    tag 2			function pow (int128 x, uint n...
+      JUMPDEST 			function pow (int128 x, uint n...
+      PUSH [tag] 4			function pow (int128 x, uint n...
+      PUSH 4			function pow (int128 x, uint n...
+      DUP1 			function pow (int128 x, uint n...
+      CALLDATASIZE 			function pow (int128 x, uint n...
+      SUB 			function pow (int128 x, uint n...
+      DUP2 			function pow (int128 x, uint n...
+      ADD 			function pow (int128 x, uint n...
+      SWAP1 			function pow (int128 x, uint n...
+      PUSH [tag] 5			function pow (int128 x, uint n...
+      SWAP2 			function pow (int128 x, uint n...
+      SWAP1 			function pow (int128 x, uint n...
+      PUSH [tag] 6			function pow (int128 x, uint n...
+      JUMP [in]			function pow (int128 x, uint n...
+    tag 5			function pow (int128 x, uint n...
+      JUMPDEST 			function pow (int128 x, uint n...
+      PUSH [tag] 7			function pow (int128 x, uint n...
+      JUMP [in]			function pow (int128 x, uint n...
+    tag 4			function pow (int128 x, uint n...
+      JUMPDEST 			function pow (int128 x, uint n...
+      PUSH 40			function pow (int128 x, uint n...
+      MLOAD 			function pow (int128 x, uint n...
+      PUSH [tag] 8			function pow (int128 x, uint n...
+      SWAP2 			function pow (int128 x, uint n...
+      SWAP1 			function pow (int128 x, uint n...
+      PUSH [tag] 9			function pow (int128 x, uint n...
+      JUMP [in]			function pow (int128 x, uint n...
+    tag 8			function pow (int128 x, uint n...
+      JUMPDEST 			function pow (int128 x, uint n...
+      PUSH 40			function pow (int128 x, uint n...
+      MLOAD 			function pow (int128 x, uint n...
+      DUP1 			function pow (int128 x, uint n...
+      SWAP2 			function pow (int128 x, uint n...
+      SUB 			function pow (int128 x, uint n...
+      SWAP1 			function pow (int128 x, uint n...
+      RETURN 			function pow (int128 x, uint n...
+    tag 3			function compound (uint princi...
+      JUMPDEST 			function compound (uint princi...
+      PUSH [tag] 10			function compound (uint princi...
+      PUSH 4			function compound (uint princi...
+      DUP1 			function compound (uint princi...
+      CALLDATASIZE 			function compound (uint princi...
+      SUB 			function compound (uint princi...
+      DUP2 			function compound (uint princi...
+      ADD 			function compound (uint princi...
+      SWAP1 			function compound (uint princi...
+      PUSH [tag] 11			function compound (uint princi...
+      SWAP2 			function compound (uint princi...
+      SWAP1 			function compound (uint princi...
+      PUSH [tag] 12			function compound (uint princi...
+      JUMP [in]			function compound (uint princi...
+    tag 11			function compound (uint princi...
+      JUMPDEST 			function compound (uint princi...
+      PUSH [tag] 13			function compound (uint princi...
+      JUMP [in]			function compound (uint princi...
+    tag 10			function compound (uint princi...
+      JUMPDEST 			function compound (uint princi...
+      PUSH 40			function compound (uint princi...
+      MLOAD 			function compound (uint princi...
+      PUSH [tag] 14			function compound (uint princi...
+      SWAP2 			function compound (uint princi...
+      SWAP1 			function compound (uint princi...
+      PUSH [tag] 15			function compound (uint princi...
+      JUMP [in]			function compound (uint princi...
+    tag 14			function compound (uint princi...
+      JUMPDEST 			function compound (uint princi...
+      PUSH 40			function compound (uint princi...
+      MLOAD 			function compound (uint princi...
+      DUP1 			function compound (uint princi...
+      SWAP2 			function compound (uint princi...
+      SUB 			function compound (uint princi...
+      SWAP1 			function compound (uint princi...
+      RETURN 			function compound (uint princi...
+    tag 7			function pow (int128 x, uint n...
+      JUMPDEST 			function pow (int128 x, uint n...
+      PUSH 0			int128 r
+      PUSH [tag] 17			ABDKMath64x64.fromUInt (1)
+      PUSH 1			1
+      PUSH [tag] 18			ABDKMath64x64.fromUInt
+      JUMP [in]			ABDKMath64x64.fromUInt (1)
+    tag 17			ABDKMath64x64.fromUInt (1)
+      JUMPDEST 			ABDKMath64x64.fromUInt (1)
+      SWAP1 			r = ABDKMath64x64.fromUInt (1)
+      POP 			r = ABDKMath64x64.fromUInt (1)
+    tag 19			while (n > 0) {\n            i...
+      JUMPDEST 			while (n > 0) {\n            i...
+      PUSH 0			0
+      DUP3 			n
+      GT 			n > 0
+      ISZERO 			while (n > 0) {\n            i...
+      PUSH [tag] 20			while (n > 0) {\n            i...
+      JUMPI 			while (n > 0) {\n            i...
+      PUSH 1			1
+      PUSH 2			2
+      DUP4 			n
+      PUSH [tag] 21			n % 2
+      SWAP2 			n % 2
+      SWAP1 			n % 2
+      PUSH [tag] 22			n % 2
+      JUMP [in]			n % 2
+    tag 21			n % 2
+      JUMPDEST 			n % 2
+      EQ 			n % 2 == 1
+      ISZERO 			if (n % 2 == 1) {\n           ...
+      PUSH [tag] 23			if (n % 2 == 1) {\n           ...
+      JUMPI 			if (n % 2 == 1) {\n           ...
+      PUSH [tag] 24			ABDKMath64x64.mul (r, x)
+      DUP2 			r
+      DUP5 			x
+      PUSH [tag] 25			ABDKMath64x64.mul
+      JUMP [in]			ABDKMath64x64.mul (r, x)
+    tag 24			ABDKMath64x64.mul (r, x)
+      JUMPDEST 			ABDKMath64x64.mul (r, x)
+      SWAP1 			r = ABDKMath64x64.mul (r, x)
+      POP 			r = ABDKMath64x64.mul (r, x)
+      PUSH 1			1
+      DUP3 			n -= 1
+      PUSH [tag] 26			n -= 1
+      SWAP2 			n -= 1
+      SWAP1 			n -= 1
+      PUSH [tag] 27			n -= 1
+      JUMP [in]			n -= 1
+    tag 26			n -= 1
+      JUMPDEST 			n -= 1
+      SWAP2 			n -= 1
+      POP 			n -= 1
+      PUSH [tag] 28			if (n % 2 == 1) {\n           ...
+      JUMP 			if (n % 2 == 1) {\n           ...
+    tag 23			if (n % 2 == 1) {\n           ...
+      JUMPDEST 			if (n % 2 == 1) {\n           ...
+      PUSH [tag] 29			ABDKMath64x64.mul (x, x)
+      DUP4 			x
+      DUP5 			x
+      PUSH [tag] 25			ABDKMath64x64.mul
+      JUMP [in]			ABDKMath64x64.mul (x, x)
+    tag 29			ABDKMath64x64.mul (x, x)
+      JUMPDEST 			ABDKMath64x64.mul (x, x)
+      SWAP3 			x = ABDKMath64x64.mul (x, x)
+      POP 			x = ABDKMath64x64.mul (x, x)
+      PUSH 2			2
+      DUP3 			n /= 2
+      PUSH [tag] 30			n /= 2
+      SWAP2 			n /= 2
+      SWAP1 			n /= 2
+      PUSH [tag] 31			n /= 2
+      JUMP [in]			n /= 2
+    tag 30			n /= 2
+      JUMPDEST 			n /= 2
+      SWAP2 			n /= 2
+      POP 			n /= 2
+    tag 28			if (n % 2 == 1) {\n           ...
+      JUMPDEST 			if (n % 2 == 1) {\n           ...
+      PUSH [tag] 19			while (n > 0) {\n            i...
+      JUMP 			while (n > 0) {\n            i...
+    tag 20			while (n > 0) {\n            i...
+      JUMPDEST 			while (n > 0) {\n            i...
+      SWAP3 			function pow (int128 x, uint n...
+      SWAP2 			function pow (int128 x, uint n...
+      POP 			function pow (int128 x, uint n...
+      POP 			function pow (int128 x, uint n...
+      JUMP [out]			function pow (int128 x, uint n...
+    tag 13			function compound (uint princi...
+      JUMPDEST 			function compound (uint princi...
+      PUSH 0			uint
+      PUSH [tag] 33			ABDKMath64x64.mulu (\n        ...
+      PUSH [tag] 34			pow (\n                ABDKMat...
+      PUSH [tag] 35			ABDKMath64x64.add (\n         ...
+      PUSH [tag] 36			ABDKMath64x64.fromUInt (1)
+      PUSH 1			1
+      PUSH [tag] 18			ABDKMath64x64.fromUInt
+      JUMP [in]			ABDKMath64x64.fromUInt (1)
+    tag 36			ABDKMath64x64.fromUInt (1)
+      JUMPDEST 			ABDKMath64x64.fromUInt (1)
+      PUSH [tag] 37			ABDKMath64x64.divu (\n        ...
+      DUP8 			ratio
+      PUSH DE0B6B3A7640000			10**18
+      PUSH [tag] 38			ABDKMath64x64.divu
+      JUMP [in]			ABDKMath64x64.divu (\n        ...
+    tag 37			ABDKMath64x64.divu (\n        ...
+      JUMPDEST 			ABDKMath64x64.divu (\n        ...
+      PUSH [tag] 39			ABDKMath64x64.add
+      JUMP [in]			ABDKMath64x64.add (\n         ...
+    tag 35			ABDKMath64x64.add (\n         ...
+      JUMPDEST 			ABDKMath64x64.add (\n         ...
+      DUP5 			n
+      PUSH [tag] 7			pow
+      JUMP [in]			pow (\n                ABDKMat...
+    tag 34			pow (\n                ABDKMat...
+      JUMPDEST 			pow (\n                ABDKMat...
+      DUP6 			principal
+      PUSH [tag] 40			ABDKMath64x64.mulu
+      JUMP [in]			ABDKMath64x64.mulu (\n        ...
+    tag 33			ABDKMath64x64.mulu (\n        ...
+      JUMPDEST 			ABDKMath64x64.mulu (\n        ...
+      SWAP1 			return ABDKMath64x64.mulu (\n ...
+      POP 			return ABDKMath64x64.mulu (\n ...
+      SWAP4 			function compound (uint princi...
+      SWAP3 			function compound (uint princi...
+      POP 			function compound (uint princi...
+      POP 			function compound (uint princi...
+      POP 			function compound (uint princi...
+      JUMP [out]			function compound (uint princi...
+    tag 18
+      JUMPDEST
+      PUSH 0
+      PUSH 7FFFFFFFFFFFFFFF
+      DUP3
+      GT
+      ISZERO
+      PUSH [tag] 42
+      JUMPI
+      PUSH 0
+      DUP1
+      REVERT
+    tag 42
+      JUMPDEST
+      PUSH 40
+      DUP3
+      SWAP1
+      SHL
+      SWAP1
+      POP
+      SWAP2
+      SWAP1
+      POP
+      JUMP [out]
+    tag 25
+      JUMPDEST
+      PUSH 0
+      DUP1
+      PUSH 40
+      DUP4
+      PUSH F
+      SIGNEXTEND
+      DUP6
+      PUSH F
+      SIGNEXTEND
+      MUL
+      SWAP1
+      SAR
+      SWAP1
+      POP
+      PUSH FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF80000000000000000000000000000000			             principal);\n    ...
+      PUSH F
+      SIGNEXTEND
+      DUP2
+      SLT
+      ISZERO
+      DUP1
+      ISZERO
+      PUSH [tag] 44
+      JUMPI
+      POP
+      PUSH 7FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      PUSH F
+      SIGNEXTEND
+      DUP2
+      SGT
+      ISZERO
+    tag 44
+      JUMPDEST
+      PUSH [tag] 45
+      JUMPI
+      PUSH 0
+      DUP1
+      REVERT
+    tag 45
+      JUMPDEST
+      DUP1
+      SWAP2
+      POP
+      POP
+      SWAP3
+      SWAP2
+      POP
+      POP
+      JUMP [out]
+    tag 38
+      JUMPDEST
+      PUSH 0
+      DUP1
+      DUP3
+      EQ
+      ISZERO
+      PUSH [tag] 47
+      JUMPI
+      PUSH 0
+      DUP1
+      REVERT
+    tag 47
+      JUMPDEST
+      PUSH 0
+      PUSH [tag] 48
+      DUP5
+      DUP5
+      PUSH [tag] 49
+      JUMP [in]
+    tag 48
+      JUMPDEST
+      SWAP1
+      POP
+      PUSH 7FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      PUSH FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      AND
+      DUP2
+      PUSH FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      AND
+      GT
+      ISZERO
+      PUSH [tag] 50
+      JUMPI
+      PUSH 0
+      DUP1
+      REVERT
+    tag 50
+      JUMPDEST
+      DUP1
+      SWAP2
+      POP
+      POP
+      SWAP3
+      SWAP2
+      POP
+      POP
+      JUMP [out]
+    tag 39
+      JUMPDEST
+      PUSH 0
+      DUP1
+      DUP3
+      PUSH F
+      SIGNEXTEND
+      DUP5
+      PUSH F
+      SIGNEXTEND
+      ADD
+      SWAP1
+      POP
+      PUSH FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF80000000000000000000000000000000			             principal);\n    ...
+      PUSH F
+      SIGNEXTEND
+      DUP2
+      SLT
+      ISZERO
+      DUP1
+      ISZERO
+      PUSH [tag] 52
+      JUMPI
+      POP
+      PUSH 7FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      PUSH F
+      SIGNEXTEND
+      DUP2
+      SGT
+      ISZERO
+    tag 52
+      JUMPDEST
+      PUSH [tag] 53
+      JUMPI
+      PUSH 0
+      DUP1
+      REVERT
+    tag 53
+      JUMPDEST
+      DUP1
+      SWAP2
+      POP
+      POP
+      SWAP3
+      SWAP2
+      POP
+      POP
+      JUMP [out]
+    tag 40
+      JUMPDEST
+      PUSH 0
+      DUP1
+      DUP3
+      EQ
+      ISZERO
+      PUSH [tag] 55
+      JUMPI
+      PUSH 0
+      SWAP1
+      POP
+      PUSH [tag] 54
+      JUMP
+    tag 55
+      JUMPDEST
+      PUSH 0
+      DUP4
+      PUSH F
+      SIGNEXTEND
+      SLT
+      ISZERO
+      PUSH [tag] 56
+      JUMPI
+      PUSH 0
+      DUP1
+      REVERT
+    tag 56
+      JUMPDEST
+      PUSH 0
+      PUSH 40
+      PUSH FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      DUP5
+      AND
+      DUP6
+      PUSH F
+      SIGNEXTEND
+      MUL
+      SWAP1
+      SHR
+      SWAP1
+      POP
+      PUSH 0
+      PUSH 80
+      DUP5
+      SWAP1
+      SHR
+      DUP6
+      PUSH F
+      SIGNEXTEND
+      MUL
+      SWAP1
+      POP
+      PUSH FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      DUP2
+      GT
+      ISZERO
+      PUSH [tag] 57
+      JUMPI
+      PUSH 0
+      DUP1
+      REVERT
+    tag 57
+      JUMPDEST
+      PUSH 40
+      DUP2
+      SWAP1
+      SHL
+      SWAP1
+      POP
+      DUP2
+      PUSH FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      SUB
+      DUP2
+      GT
+      ISZERO
+      PUSH [tag] 58
+      JUMPI
+      PUSH 0
+      DUP1
+      REVERT
+    tag 58
+      JUMPDEST
+      DUP2
+      DUP2
+      ADD
+      SWAP3
+      POP
+      POP
+      POP
+    tag 54
+      JUMPDEST
+      SWAP3
+      SWAP2
+      POP
+      POP
+      JUMP [out]
+    tag 49
+      JUMPDEST
+      PUSH 0
+      DUP1
+      DUP3
+      EQ
+      ISZERO
+      PUSH [tag] 60
+      JUMPI
+      PUSH 0
+      DUP1
+      REVERT
+    tag 60
+      JUMPDEST
+      PUSH 0
+      PUSH FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      DUP5
+      GT
+      PUSH [tag] 61
+      JUMPI
+      DUP3
+      PUSH 40
+      DUP6
+      SWAP1
+      SHL
+      DUP2
+      PUSH [tag] 62
+      JUMPI
+      PUSH [tag] 63
+      PUSH [tag] 64
+      JUMP [in]
+    tag 63
+      JUMPDEST
+    tag 62
+      JUMPDEST
+      DIV
+      SWAP1
+      POP
+      PUSH [tag] 65
+      JUMP
+    tag 61
+      JUMPDEST
+      PUSH 0
+      PUSH C0
+      SWAP1
+      POP
+      PUSH 0
+      PUSH C0
+      DUP7
+      SWAP1
+      SHR
+      SWAP1
+      POP
+      PUSH 100000000
+      DUP2
+      LT
+      PUSH [tag] 66
+      JUMPI
+      PUSH 20
+      DUP2
+      SWAP1
+      SHR
+      SWAP1
+      POP
+      PUSH 20
+      DUP3
+      ADD
+      SWAP2
+      POP
+    tag 66
+      JUMPDEST
+      PUSH 10000
+      DUP2
+      LT
+      PUSH [tag] 67
+      JUMPI
+      PUSH 10
+      DUP2
+      SWAP1
+      SHR
+      SWAP1
+      POP
+      PUSH 10
+      DUP3
+      ADD
+      SWAP2
+      POP
+    tag 67
+      JUMPDEST
+      PUSH 100
+      DUP2
+      LT
+      PUSH [tag] 68
+      JUMPI
+      PUSH 8
+      DUP2
+      SWAP1
+      SHR
+      SWAP1
+      POP
+      PUSH 8
+      DUP3
+      ADD
+      SWAP2
+      POP
+    tag 68
+      JUMPDEST
+      PUSH 10
+      DUP2
+      LT
+      PUSH [tag] 69
+      JUMPI
+      PUSH 4
+      DUP2
+      SWAP1
+      SHR
+      SWAP1
+      POP
+      PUSH 4
+      DUP3
+      ADD
+      SWAP2
+      POP
+    tag 69
+      JUMPDEST
+      PUSH 4
+      DUP2
+      LT
+      PUSH [tag] 70
+      JUMPI
+      PUSH 2
+      DUP2
+      SWAP1
+      SHR
+      SWAP1
+      POP
+      PUSH 2
+      DUP3
+      ADD
+      SWAP2
+      POP
+    tag 70
+      JUMPDEST
+      PUSH 2
+      DUP2
+      LT
+      PUSH [tag] 71
+      JUMPI
+      PUSH 1
+      DUP3
+      ADD
+      SWAP2
+      POP
+    tag 71
+      JUMPDEST
+      PUSH 1
+      PUSH BF
+      DUP4
+      SUB
+      PUSH 1
+      DUP8
+      SUB
+      SWAP1
+      SHR
+      ADD
+      DUP3
+      PUSH FF
+      SUB
+      DUP8
+      SWAP1
+      SHL
+      DUP2
+      PUSH [tag] 72
+      JUMPI
+      PUSH [tag] 73
+      PUSH [tag] 64
+      JUMP [in]
+    tag 73
+      JUMPDEST
+    tag 72
+      JUMPDEST
+      DIV
+      SWAP3
+      POP
+      PUSH FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      DUP4
+      GT
+      ISZERO
+      PUSH [tag] 74
+      JUMPI
+      PUSH 0
+      DUP1
+      REVERT
+    tag 74
+      JUMPDEST
+      PUSH 0
+      PUSH 80
+      DUP7
+      SWAP1
+      SHR
+      DUP5
+      MUL
+      SWAP1
+      POP
+      PUSH 0
+      PUSH FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      DUP8
+      AND
+      DUP6
+      MUL
+      SWAP1
+      POP
+      PUSH 0
+      PUSH C0
+      DUP10
+      SWAP1
+      SHR
+      SWAP1
+      POP
+      PUSH 0
+      PUSH 40
+      DUP11
+      SWAP1
+      SHL
+      SWAP1
+      POP
+      DUP3
+      DUP2
+      LT
+      ISZERO
+      PUSH [tag] 75
+      JUMPI
+      PUSH 1
+      DUP3
+      SUB
+      SWAP2
+      POP
+    tag 75
+      JUMPDEST
+      DUP3
+      DUP2
+      SUB
+      SWAP1
+      POP
+      PUSH 80
+      DUP5
+      SWAP1
+      SHL
+      SWAP3
+      POP
+      DUP3
+      DUP2
+      LT
+      ISZERO
+      PUSH [tag] 76
+      JUMPI
+      PUSH 1
+      DUP3
+      SUB
+      SWAP2
+      POP
+    tag 76
+      JUMPDEST
+      DUP3
+      DUP2
+      SUB
+      SWAP1
+      POP
+      PUSH 80
+      DUP5
+      SWAP1
+      SHR
+      DUP3
+      EQ
+      PUSH [tag] 77
+      JUMPI
+      PUSH [tag] 78
+      PUSH [tag] 79
+      JUMP [in]
+    tag 78
+      JUMPDEST
+    tag 77
+      JUMPDEST
+      DUP9
+      DUP2
+      DUP2
+      PUSH [tag] 80
+      JUMPI
+      PUSH [tag] 81
+      PUSH [tag] 64
+      JUMP [in]
+    tag 81
+      JUMPDEST
+    tag 80
+      JUMPDEST
+      DIV
+      DUP8
+      ADD
+      SWAP7
+      POP
+      POP
+      POP
+      POP
+      POP
+      POP
+      POP
+    tag 65
+      JUMPDEST
+      PUSH FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      DUP2
+      GT
+      ISZERO
+      PUSH [tag] 82
+      JUMPI
+      PUSH 0
+      DUP1
+      REVERT
+    tag 82
+      JUMPDEST
+      DUP1
+      SWAP2
+      POP
+      POP
+      SWAP3
+      SWAP2
+      POP
+      POP
+      JUMP [out]
+    tag 84			ol";\n// Uncomment this line t...
+      JUMPDEST 			ol";\n// Uncomment this line t...
+      PUSH 0			c
+      DUP1 			f
+      REVERT 			 {\n    funct
+    tag 86			 if (n % 2 == 1) {\n          ...
+      JUMPDEST 			 if (n % 2 == 1) {\n          ...
+      PUSH 0			 = ABDK
+      DUP2 			 n -=
+      PUSH F
+      SIGNEXTEND 			                n -=
+      SWAP1 			ul (r, x);\n                n ...
+      POP 			ul (r, x);\n                n ...
+      SWAP2 			 if (n % 2 == 1) {\n          ...
+      SWAP1 			 if (n % 2 == 1) {\n          ...
+      POP 			 if (n % 2 == 1) {\n          ...
+      JUMP [out]			 if (n % 2 == 1) {\n          ...
+    tag 87			   } else {\n                x...
+      JUMPDEST 			   } else {\n                x...
+      PUSH [tag] 101			  n /= 2;\n            }
+      DUP2
+      PUSH [tag] 86			  n /= 2;\n            }
+      JUMP [in]			  n /= 2;\n            }
+    tag 101			  n /= 2;\n            }
+      JUMPDEST 			  n /= 2;\n            }
+      DUP2
+      EQ 			            n /= 2;\n         ...
+      PUSH [tag] 102			, x);\n                n /= 2;...
+      JUMPI 			, x);\n                n /= 2;...
+      PUSH 0			}
+      DUP1
+      REVERT 			    }\n    }\n
+    tag 102			, x);\n                n /= 2;...
+      JUMPDEST 			, x);\n                n /= 2;...
+      POP 			   } else {\n                x...
+      JUMP [out]			   } else {\n                x...
+    tag 88			compound (uint principal, uint...
+      JUMPDEST 			compound (uint principal, uint...
+      PUSH 0			 publ
+      DUP2 			return
+      CALLDATALOAD 			t) {\n        return
+      SWAP1 			urns (uint) {\n        return
+      POP 			urns (uint) {\n        return
+      PUSH [tag] 104			4x64.mulu (\n                p...
+      DUP2 			  pow
+      PUSH [tag] 87			4x64.mulu (\n                p...
+      JUMP [in]			4x64.mulu (\n                p...
+    tag 104			4x64.mulu (\n                p...
+      JUMPDEST 			4x64.mulu (\n                p...
+      SWAP3 			compound (uint principal, uint...
+      SWAP2 			compound (uint principal, uint...
+      POP 			compound (uint principal, uint...
+      POP 			compound (uint principal, uint...
+      JUMP [out]			compound (uint principal, uint...
+    tag 89			      ABDKMath64x64.add (\n   ...
+      JUMPDEST 			      ABDKMath64x64.add (\n   ...
+      PUSH 0
+      DUP2 			nt (1
+      SWAP1 			4x64.fromUInt (1
+      POP 			4x64.fromUInt (1
+      SWAP2 			      ABDKMath64x64.add (\n   ...
+      SWAP1 			      ABDKMath64x64.add (\n   ...
+      POP 			      ABDKMath64x64.add (\n   ...
+      JUMP [out]			      ABDKMath64x64.add (\n   ...
+    tag 90			           ABDKMath64x64.divu ...
+      JUMPDEST 			           ABDKMath64x64.divu ...
+      PUSH [tag] 107			      10**18)),\n
+      DUP2
+      PUSH [tag] 89			      10**18)),\n
+      JUMP [in]			      10**18)),\n
+    tag 107			      10**18)),\n
+      JUMPDEST 			      10**18)),\n
+      DUP2
+      EQ 			                10**18)),\n   ...
+      PUSH [tag] 108			atio,\n                    10*...
+      JUMPI 			atio,\n                    10*...
+      PUSH 0
+      DUP1
+      REVERT 			   n),\n
+    tag 108			atio,\n                    10*...
+      JUMPDEST 			atio,\n                    10*...
+      POP 			           ABDKMath64x64.divu ...
+      JUMP [out]			           ABDKMath64x64.divu ...
+    tag 91			ncipal);\n    }\n}
+      JUMPDEST 			ncipal);\n    }\n}
+      PUSH 0
+      DUP2
+      CALLDATALOAD
+      SWAP1
+      POP
+      PUSH [tag] 110
+      DUP2
+      PUSH [tag] 90
+      JUMP [in]
+    tag 110
+      JUMPDEST
+      SWAP3 			ncipal);\n    }\n}
+      SWAP2 			ncipal);\n    }\n}
+      POP 			ncipal);\n    }\n}
+      POP 			ncipal);\n    }\n}
+      JUMP [out]			ncipal);\n    }\n}
+    tag 6
+      JUMPDEST
+      PUSH 0
+      DUP1
+      PUSH 40
+      DUP4
+      DUP6
+      SUB
+      SLT
+      ISZERO
+      PUSH [tag] 112
+      JUMPI
+      PUSH [tag] 113
+      PUSH [tag] 84
+      JUMP [in]
+    tag 113
+      JUMPDEST
+    tag 112
+      JUMPDEST
+      PUSH 0
+      PUSH [tag] 114
+      DUP6
+      DUP3
+      DUP7
+      ADD
+      PUSH [tag] 88
+      JUMP [in]
+    tag 114
+      JUMPDEST
+      SWAP3
+      POP
+      POP
+      PUSH 20
+      PUSH [tag] 115
+      DUP6
+      DUP3
+      DUP7
+      ADD
+      PUSH [tag] 91
+      JUMP [in]
+    tag 115
+      JUMPDEST
+      SWAP2
+      POP
+      POP
+      SWAP3
+      POP
+      SWAP3
+      SWAP1
+      POP
+      JUMP [out]
+    tag 92
+      JUMPDEST
+      PUSH [tag] 117
+      DUP2
+      PUSH [tag] 86
+      JUMP [in]
+    tag 117
+      JUMPDEST
+      DUP3
+      MSTORE
+      POP
+      POP
+      JUMP [out]
+    tag 9
+      JUMPDEST
+      PUSH 0
+      PUSH 20
+      DUP3
+      ADD
+      SWAP1
+      POP
+      PUSH [tag] 119
+      PUSH 0
+      DUP4
+      ADD
+      DUP5
+      PUSH [tag] 92
+      JUMP [in]
+    tag 119
+      JUMPDEST
+      SWAP3
+      SWAP2
+      POP
+      POP
+      JUMP [out]
+    tag 12
+      JUMPDEST
+      PUSH 0
+      DUP1
+      PUSH 0
+      PUSH 60
+      DUP5
+      DUP7
+      SUB
+      SLT
+      ISZERO
+      PUSH [tag] 121
+      JUMPI
+      PUSH [tag] 122
+      PUSH [tag] 84
+      JUMP [in]
+    tag 122
+      JUMPDEST
+    tag 121
+      JUMPDEST
+      PUSH 0
+      PUSH [tag] 123
+      DUP7
+      DUP3
+      DUP8
+      ADD
+      PUSH [tag] 91
+      JUMP [in]
+    tag 123
+      JUMPDEST
+      SWAP4
+      POP
+      POP
+      PUSH 20
+      PUSH [tag] 124
+      DUP7
+      DUP3
+      DUP8
+      ADD
+      PUSH [tag] 91
+      JUMP [in]
+    tag 124
+      JUMPDEST
+      SWAP3
+      POP
+      POP
+      PUSH 40
+       
+      DUP7
+      DUP3
+      DUP8
+      ADD
+      PUSH [tag] 91
+      JUMP [in]
+    tag 125
+      JUMPDEST
+      SWAP2
+      POP
+      POP
+      SWAP3
+      POP
+      SWAP3
+      POP
+      SWAP3
+      JUMP [out]
+    tag 93
+      JUMPDEST
+      PUSH [tag] 127
+      DUP2
+      PUSH [tag] 89
+      JUMP [in]
+    tag 127
+      JUMPDEST
+      DUP3
+      MSTORE
+      POP
+      POP
+      JUMP [out]
+    tag 15
+      JUMPDEST
+      PUSH 0
+      PUSH 20
+      DUP3
+      ADD
+      SWAP1
+      POP
+      PUSH [tag] 129
+      PUSH 0
+      DUP4
+      ADD
+      DUP5
+      PUSH [tag] 93
+      JUMP [in]
+    tag 129
+      JUMPDEST
+      SWAP3
+      SWAP2
+      POP
+      POP
+      JUMP [out]
+    tag 64
+      JUMPDEST
+      PUSH 4E487B7100000000000000000000000000000000000000000000000000000000
+      PUSH 0
+      MSTORE
+      PUSH 12
+      PUSH 4
+      MSTORE
+      PUSH 24
+      PUSH 0
+      REVERT
+    tag 22
+      JUMPDEST
+      PUSH 0
+      PUSH [tag] 132
+      DUP3
+      PUSH [tag] 89
+      JUMP [in]
+    tag 132
+      JUMPDEST
+      SWAP2
+      POP
+      PUSH [tag] 133
+      DUP4
+      PUSH [tag] 89
+      JUMP [in]
+    tag 133
+      JUMPDEST
+      SWAP3
+      POP
+      DUP3
+      PUSH [tag] 134
+      JUMPI
+      PUSH [tag] 135
+      PUSH [tag] 64
+      JUMP [in]
+    tag 135
+      JUMPDEST
+    tag 134
+      JUMPDEST
+      DUP3
+      DUP3
+      MOD
+      SWAP1
+      POP
+      SWAP3
+      SWAP2
+      POP
+      POP
+      JUMP [out]
+    tag 94
+      JUMPDEST
+      PUSH 4E487B7100000000000000000000000000000000000000000000000000000000
+      PUSH 0
+      MSTORE
+      PUSH 11
+      PUSH 4
+      MSTORE
+      PUSH 24
+      PUSH 0
+      REVERT
+    tag 27
+      JUMPDEST
+      PUSH 0
+      PUSH [tag] 138
+      DUP3
+      PUSH [tag] 89
+      JUMP [in]
+    tag 138
+      JUMPDEST
+      SWAP2
+      POP
+      PUSH [tag] 139
+      DUP4
+      PUSH [tag] 89
+      JUMP [in]
+    tag 139
+      JUMPDEST
+      SWAP3
+      POP
+      DUP3
+      DUP3
+      LT
+      ISZERO
+      PUSH [tag] 140
+      JUMPI
+      PUSH [tag] 141
+      PUSH [tag] 94
+      JUMP [in]
+    tag 141
+      JUMPDEST
+    tag 140
+      JUMPDEST
+      DUP3
+      DUP3
+      SUB
+      SWAP1
+      POP
+      SWAP3
+      SWAP2
+      POP
+      POP
+      JUMP [out]
+    tag 31
+      JUMPDEST
+      PUSH 0
+      PUSH [tag] 143
+      DUP3
+      PUSH [tag] 89
+      JUMP [in]
+    tag 143
+      JUMPDEST
+      SWAP2
+      POP
+      PUSH [tag] 144
+      DUP4
+      PUSH [tag] 89
+      JUMP [in]
+    tag 144
+      JUMPDEST
+      SWAP3
+      POP
+      DUP3
+      PUSH [tag] 145
+      JUMPI
+      PUSH [tag] 146
+      PUSH [tag] 64
+      JUMP [in]
+    tag 146
+      JUMPDEST
+    tag 145
+      JUMPDEST
+      DUP3
+      DUP3
+      DIV
+      SWAP1
+      POP
+      SWAP3
+      SWAP2
+      POP
+      POP
+      JUMP [out]
+    tag 79
+      JUMPDEST
+      PUSH 4E487B7100000000000000000000000000000000000000000000000000000000
+      PUSH 0
+      MSTORE
+      PUSH 1
+      PUSH 4
+      MSTORE
+      PUSH 24
+      PUSH 0
+      REVERT
+    .data

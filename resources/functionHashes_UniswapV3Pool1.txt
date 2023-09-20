@@ -1,0 +1,18 @@
+{
+	"46141319": "feeGrowthGlobal1X128()",
+	"c45a0155": "factory()",
+	"ddca3f43": "fee()",
+	"f3058399": "feeGrowthGlobal0X128()",
+	"1a686502": "liquidity()",
+	"70cf754a": "maxLiquidityPerTick()",
+	"252c09d7": "observations(uint256)",
+	"514ea4bf": "positions(bytes32)",
+	"1ad8b03b": "protocolFees()",
+	"3850c7bd": "slot0()",
+	"128acb08": "swap(address,bool,int256,uint160,bytes)",
+	"5339c296": "tickBitmap(int16)",
+	"d0c93a7c": "tickSpacing()",
+	"f30dba93": "ticks(int24)",
+	"0dfe1681": "token0()",
+	"d21220a7": "token1()"
+}
