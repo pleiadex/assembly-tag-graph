@@ -1,3 +1,4 @@
+import os
 from collections import deque
 import networkx as nx
 import matplotlib.pyplot as plt
@@ -22,18 +23,18 @@ def preprocess(file_name):
 
   return contract_code_manager, transaction_code_manager
 
-def plot(G, file_name):
-  plt.figure(figsize =(50, 50))
+def plot(G, dir, file_name):
+  plt.figure(figsize =(100, 100))
   options = {
       'node_color': 'green',
-      'node_size': 1000,
+      'node_size': 1e4,
       'width': 5,
-      'font_size': 30,
-      'arrowsize': 30,
+      'font_size': 15,
+      'arrowsize': 10,
   }
 
   nx.draw_networkx(G, **options)
-  plt.savefig(f"../outputs/{file_name}.png")
+  plt.savefig(f"{dir}/{file_name}.png")
 
 def execute(code_manager):
 
@@ -99,7 +100,7 @@ def execute(code_manager):
           tag_id = dest.split(' ')[1]
           next_pc = int(code_manager.label_hashmap[f"tag {tag_id}"])
 
-        else:
+        else: # FIXME: jump dest address is being calculated out of stack values ex) tag 86
           next_pc = int(dest)
 
         # create a new job and push to the job queue
@@ -129,7 +130,7 @@ def execute(code_manager):
             job.stack[-swap_index], job.stack[-1] = job.stack[-1], job.stack[-swap_index]
 
           else:
-            job.stack.append('0x1') # random value
+            job.stack.append('1') # random value
 
       else:
         pass
@@ -137,17 +138,20 @@ def execute(code_manager):
   return g
 
 def main():
+  for function in ['assembly_caInterest', 'assembly_UniswapV3Pool1']:
+    dir_path = f'../outputs/{function}'
+    os.makedirs(dir_path, exist_ok=True)
 
-  # split the code into contract code and transaction code
-  contract_code, transaction_code = preprocess('assembly_caInterest.txt')
+    # split the code into contract code and transaction code
+    contract_code, transaction_code = preprocess(f'{function}.txt')
 
-   # create a graph under /outputs
-  # contract_graph = execute(contract_code)
-  transaction_graph = execute(transaction_code)
+    # create a graph under /outputs
+    contract_graph = execute(contract_code)
+    transaction_graph = execute(transaction_code)
 
-  # plot the graph (png)
-  # plot(contract_graph, 'contract_graph')
-  plot(transaction_graph, 'transaction_graph')
+    # plot the graph (png)
+    plot(contract_graph, dir_path, 'contract_graph')
+    plot(transaction_graph, dir_path, 'transaction_graph')
 
 if __name__ == "__main__":
   main()

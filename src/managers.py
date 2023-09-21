@@ -49,6 +49,7 @@ class OpcodeManager:
 
 class StackManager:
   def __init__(self):
+    # refer to https://github.com/ethereum/evmlab/blob/master/evmlab/opcodes.py
     # schema: [opcode, ins, outs, gas]
     self.opcodes = {
       0x00: ['STOP', 0, 0, 0],
@@ -117,6 +118,8 @@ class StackManager:
       0xa2: ['LOG2', 4, 0, 1125],
       0xa3: ['LOG3', 5, 0, 1500],
       0xa4: ['LOG4', 6, 0, 1875],
+      0x5c: ['PUSHIMMUTABLE', 0, 1, 3],
+      0x5d: ['ASSIGNIMMUTABLE', 0, 0, 3],
       0x5e: ['PUSHDEPLOYADDRESS', 0, 1, 3],
       0xf0: ['CREATE', 3, 1, 32000],
       0xf1: ['CALL', 7, 1, 40],

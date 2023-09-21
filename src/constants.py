@@ -4,6 +4,7 @@ class CODE_TYPE:
 
 
 class OPCODE:
+  # refer to https://github.com/ethereum/py-evm/blob/master/eth/vm/opcode_values.py
   #
   # Stop and Arithmetic
   #
@@ -100,6 +101,9 @@ class OPCODE:
   GAS = 0x5A
   JUMPDEST = 0x5B
 
+  # Temporary opcodes for testing
+  PUSHIMMUTABLE = 0x5C # push immutable data
+  ASSIGNIMMUTABLE = 0x5D # assign immutable data
   PUSHDEPLOYADDRESS = 0x5E # EIP-2930: push deployer address
 
 
