@@ -24,7 +24,7 @@ def preprocess(file_name):
   return contract_code_manager, transaction_code_manager
 
 def plot(G, dir, file_name):
-  plt.figure(figsize =(100, 100))
+  plt.figure(figsize =(150, 150))
   options = {
       'node_color': 'green',
       'node_size': 1e4,
@@ -127,7 +127,7 @@ def execute(code_manager):
 
           elif 'SWAP' in opcode:
             swap_index = int(opcode[4:])
-            job.stack[-swap_index], job.stack[-1] = job.stack[-1], job.stack[-swap_index]
+            job.stack[-(swap_index+1)], job.stack[-1] = job.stack[-1], job.stack[-(swap_index+1)]
 
           else:
             job.stack.append('1') # random value

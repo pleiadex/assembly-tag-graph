@@ -139,7 +139,3 @@ class StackManager:
     for i in range(1, 17):
       self.opcodes[0x7f + i] = ['DUP' + str(i), 0, 1, 3]
       self.opcodes[0x8f + i] = ['SWAP' + str(i), 0, 1, 3]
-
-
-#   @staticmethod
-#   def get_num_of_operand_in_stack(opcode):
